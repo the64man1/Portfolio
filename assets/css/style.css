@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #192a56;
+    --secondary-color: #0097e6;
+  }
+  
+  body {
+    margin: 0 0 20px 0;
+    padding: 0;
+    background-color: var(--primary-color);
+  }
+  
+  header h1, h2 {
+    padding-bottom: 10px;
+    color: #0097e6;
+  }
+  
+  h1 {
+    font-size: 300%;
+  }
+  
+  h1,
+  h2 {
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: var(--primary-color);
+  }
+  
+  #top {
+    width: 69%;
+    padding: 10px 0 0 10px;
+  }
+  
+  #bottom {
+    width: 31%;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: var(--primary-color);
+  }
+  
+  nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  .hero-image img {
+      width: 100%;
+      height: 400px;
+  }
+  
+  .aboutmebox {
+    display: flex;
+  }
+  
+  #aboutme {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #aboutme p {
+    padding: 5px 10px 5px 10px;
+    width: 67%;
+  }
+  
+  .aboutmebox img {
+    width: 33%
+  }
+  
+  #picofmax {
+    height: 300px;
+    width: 250px;  
+  }
+
+  #aboutme h3 {
+    border-width: 0 0 5px 0;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    font-size: 170%;
+  }
+  
+  #projects {
+    background-color: var(--secondary-color);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  #projects h3 {
+    color: var(--primary-color);
+    border-width: 0 0 5px 0;
+    border-style: solid;
+    border-color: var(--primary-color);
+    font-size: 170%;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .projectlink {
+    display: block;
+    border-color: var(--primary-color);
+    text-decoration: none;
+    padding-left: 5px;
+    color: var(--primary-color);
+  }
+  
+  .triprojects {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .project1 {
+    width: 60%;
+    border-style: solid;
+    margin: 10px;
+  }
+  
+  #project1pic {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  #project2pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #project3pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #project4pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #project5pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .projects23 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .project2 {
+    border-style: solid;
+    margin: 10px;
+  }
+  
+  .project3 {
+    border-style: solid;
+    margin: 10px;
+  }
+  
+  .dosprojects {
+    display: flex;
+  }
+  
+  .project4 {
+    width: 61.2%;
+    border-style: solid;
+    margin: 10px;
+  }
+  
+  .project5 {
+    width: 38.8%;
+    border-style: solid;
+    margin: 10px;
+  }
+  
+  #contactme {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contactme h3 {
+    font-size: 175%;
+    padding-left: 10px;
+    border-width: 0 0 5px 0;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  address {
+    display: flex;
+  }
+  
+  address a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--secondar-color);
+    width: 33%;
+  }
+  
+  @media (max-width: 756px) {
+    header {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #top,
+    #bottom {
+      width: 100%;
+    }
+    
+    #aboutme {
+      padding-left: 10px;
+    }
+    
+    #aboutme h3 {
+      text-align: center;
+    }
+    
+    #aboutme p {
+      width: 100%;
+    }
+    
+    #projects {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    
+    #project1pic {
+        height: 80px;
+    }
+
+    .triprojects {
+      flex-direction: column;
+    }
+    
+    .aboutmebox {
+      flex-direction: column;
+    }
+    
+    .aboutmebox img {
+      width: 100%;
+    }
+    
+    .project1 {
+      width: 96.8%;
+      height: 150px;
+    }
+    
+    .projects23 {
+      width: 100%;
+    }
+    
+    .dosprojects {
+      flex-direction: column;
+    }
+    
+    .project4 {
+      width: 96.8%;
+    }
+    
+    .project5 {
+      width: 96.8%;
+    }
+    
+    address {
+      flex-direction: column;
+    }
+    
+    address a {
+      padding-bottom: 20px;
+    }
+  }
